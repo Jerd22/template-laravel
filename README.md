@@ -10,7 +10,7 @@
 ## Install 
 
 1. git clone https://github.com/Jerd22/template-laravel.git 
-2. npm i 
+2. cd template-laravel && npm install 
 3. composer install 
 4. run copy .env.example .env 
 5. run php artisan key:generate
