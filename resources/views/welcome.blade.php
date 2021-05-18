@@ -56,13 +56,13 @@
               <div class="hidden sm:block sm:ml-6">
                 <div class="flex space-x-4">
                   <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                  <a href="#" class="bg-purple-600 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Home</a>
+                  <a href="#" class="bg-purple-600 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Dashboard</a>
 
-                  <a href="#" class="text-gray-500 hover:bg-purple-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Used</a>
+                  <a href="#" class="text-gray-500 hover:bg-purple-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Team</a>
 
-                  <a href="#" class="text-gray-500 hover:bg-purple-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Return</a>
+                  <a href="#" class="text-gray-500 hover:bg-purple-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Products</a>
 
-                  <a href="#" class="text-gray-500 hover:bg-purple-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Register</a>
+                  <a href="#" class="text-gray-500 hover:bg-purple-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Calendar</a>
 
                 </div>
               </div>
@@ -81,7 +81,7 @@
                 <div>
                   <button @click="open = true" type="button" class="bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-purple-600 focus:ring-white" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
                     <span class="sr-only">Open user menu</span>
-                    <img class="h-8 w-8 rounded-full" src="http://utltrain1.th.utacgroup.com/training/personpicture/344771.jpg" alt="">
+                    <img class="h-8 w-8 rounded-full" src="{{ URL::asset('images/profile.png') }}" alt="">
                   </button>
                 </div>
 
@@ -110,13 +110,13 @@
         <div x-show="mobilemenu" @click.away="mobilemenu = false" class="sm:hidden" id="mobile-menu">
           <div class="px-2 pt-2 pb-3 space-y-1">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-            <a href="#" class="bg-purple-600 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Home</a>
+            <a href="#" class="bg-purple-600 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Dashboard</a>
 
-            <a href="#" class="text-gray-500 hover:bg-purple-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Used</a>
+            <a href="#" class="text-gray-500 hover:bg-purple-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Team</a>
 
-            <a href="#" class="text-gray-500 hover:bg-purple-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Return</a>
+            <a href="#" class="text-gray-500 hover:bg-purple-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
 
-            <a href="#" class="text-gray-500 hover:bg-purple-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Register</a>
+            <a href="#" class="text-gray-500 hover:bg-purple-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Calendar</a>
           </div>
         </div>
       </nav>
